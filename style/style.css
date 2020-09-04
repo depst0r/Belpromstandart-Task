@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 * {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
+}
+
+[data-ripple] {
+    position: relative;
+    overflow: hidden;
 }
 
 .heading {
@@ -19,76 +26,10 @@
     font-size: 30px;
 }
 
-.container__cercle {
-    border: 1px solid #E41579;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-left: 10%;
-}
-
-.cercle__cross span {
-    font-size: 50px;
-    color: #E41579;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-
-.active__cross {
-    transform: rotate(45deg);
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
 
 .container {
 
     justify-content: space-between;
-}
-
-
-
-
-
-
-
-
-
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-
-[data-ripple] {
-    position: relative;
-    overflow: hidden;
-}
-
-.ripple-effect {
-    position: absolute;
-    border-radius: 9999px;
-    animation: ripple-animation 2s;
-}
-
-@keyframes ripple-animation {
-    from {
-        transform: scale(1);
-        opacity: 0.4;
-    }
-
-    to {
-        transform: scale(100);
-        opacity: 0;
-    }
 }
 
 .aks-accordion {
