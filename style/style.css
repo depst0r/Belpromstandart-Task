@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
 * {
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 
 [data-ripple] {
     position: relative;
@@ -27,10 +29,14 @@
 }
 
 
-.container {
 
-    justify-content: space-between;
+.ripple-effect {
+    position: absolute;
+    border-radius: 9999px;
+    animation: ripple-animation 2s;
 }
+
+
 
 .aks-accordion {
     width: 80%;
@@ -114,4 +120,12 @@
 
 .aks-accordion-item.opened .aks-accordion-item-icon-close {
     display: block;
+}
+
+.container {
+    display: flex;
+}
+
+.image {
+    flex: 50%;
 }
