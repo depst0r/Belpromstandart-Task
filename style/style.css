@@ -3,6 +3,10 @@
     font-family: "Inter", sans-serif;
 }
 
+body {
+    max-width: 1920px;
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
@@ -41,6 +45,7 @@
 .aks-accordion {
     width: 80%;
     margin: 0 auto;
+    padding-left: 5%;
 }
 
 
@@ -73,18 +78,19 @@
     text-align: center;
 }
 
-.aks-accordion-item-icon span {
+span {
     font-size: 50px;
     color: #E41579;
 }
 
-.aks-accordion-item-icon span:hover {
+
+.shadow:hover {
     text-shadow: 1px 1px 10px black;
 }
 
 
 .aks-accordion-item-title {
-    width: 90%;
+    /* width: 90%; */
     text-align: left;
     line-height: 1.5;
     display: flex;
@@ -126,6 +132,26 @@
     display: flex;
 }
 
-.image {
-    flex: 50%;
+.image img {
+    height: 549.34px;
+}
+
+.animated_cross {
+    color: white;
+    transition: .3s;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.transform-cross {
+    /* color: #E41579; */
+    transition: .3s;
+    transform: rotate(45deg);
+    /* -webkit-transform: rotate(-45deg); */
+    /* transition: rotate(-45deg); */
+}
+
+.animated_cercle {
+    transition: .3s;
+    background: #E41579;
 }
