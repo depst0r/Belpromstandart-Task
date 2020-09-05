@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const cross = document.querySelectorAll('span'),
-        cercle = document.querySelectorAll('.aks-accordion-item-icon'),
-        content = document.querySelectorAll('.aks-accordion-item-content');
+        cercle = document.querySelectorAll('.aks-accordion-item-icon');
 
 
 

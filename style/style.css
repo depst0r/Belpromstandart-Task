@@ -7,6 +7,11 @@ body {
     max-width: 1920px;
 }
 
+span {
+    font-size: 50px;
+    color: #E41579;
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
@@ -14,6 +19,17 @@ body {
 [data-ripple] {
     position: relative;
     overflow: hidden;
+}
+
+.image img {
+    height: 549.34px;
+}
+
+.image {
+    display: flex;
+    justify-items: normal;
+    position: absolute;
+    margin-left: 50%;
 }
 
 .heading {
@@ -78,11 +94,6 @@ body {
     text-align: center;
 }
 
-span {
-    font-size: 50px;
-    color: #E41579;
-}
-
 
 .shadow:hover {
     text-shadow: 1px 1px 10px black;
@@ -104,16 +115,29 @@ span {
 
 .aks-accordion-item-content {
     display: none;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 12px;
     padding-right: 8px;
     padding-bottom: 0;
     padding-left: 80px;
     overflow: hidden;
     word-break: break-word;
-    width: 100%;
+    width: 50%;
     text-align: left;
     line-height: 1.5;
+}
+
+.animated_cross {
+    color: white;
+    transition: .3s;
+    transform: rotate(45deg);
+
+}
+
+
+.animated_cercle {
+    transition: .3s;
+    background: #E41579;
 }
 
 .aks-accordion-item.opened .aks-accordion-item-icon-open {
@@ -130,28 +154,4 @@ span {
 
 .container {
     display: flex;
-}
-
-.image img {
-    height: 549.34px;
-}
-
-.animated_cross {
-    color: white;
-    transition: .3s;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.transform-cross {
-    /* color: #E41579; */
-    transition: .3s;
-    transform: rotate(45deg);
-    /* -webkit-transform: rotate(-45deg); */
-    /* transition: rotate(-45deg); */
-}
-
-.animated_cercle {
-    transition: .3s;
-    background: #E41579;
 }
