@@ -29,7 +29,7 @@ span {
     display: flex;
     justify-items: normal;
     position: absolute;
-    margin-left: 50%;
+    margin-left: 53%;
 }
 
 .heading {
@@ -42,6 +42,7 @@ span {
 .heading__text {
     font-size: 130px;
     color: #F6F6F6;
+    /* color: blue; */
 }
 
 .heading__subtext {
@@ -101,7 +102,6 @@ span {
 
 
 .aks-accordion-item-title {
-    /* width: 90%; */
     text-align: left;
     line-height: 1.5;
     display: flex;
@@ -115,14 +115,13 @@ span {
 
 .aks-accordion-item-content {
     display: none;
-    /* width: 100%; */
     padding-top: 12px;
     padding-right: 8px;
     padding-bottom: 0;
     padding-left: 80px;
     overflow: hidden;
     word-break: break-word;
-    width: 50%;
+    width: 55%;
     text-align: left;
     line-height: 1.5;
 }
@@ -154,4 +153,29 @@ span {
 
 .container {
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        margin-top: -220px;
+        margin-left: 68%;
+    }
+
+    .image img {
+        height: 250px;
+    }
+
+    .aks-accordion {
+        margin: 0;
+        padding: 0;
+    }
+
+    .heading__text {
+        margin-bottom: 5px;
+        font-size: 70px;
+    }
+
+    .aks-accordion-item-content {
+        width: 100%;
+    }
 }
